@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+.gameContainer{
+    background-image: url(bkg.png);
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+.gameover{
+    position: relative;
+    top: 90px;
+    font-size: 43px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#scoreCount{
+    position: absolute;
+    top: 30px;
+    right: 34px;
+    font-size: 23px;
+    padding: 11px;
+    font-family: sans-serif;
+    text-align: right;
+    color: gold;
+    border: 2px solid gold;
+    border-radius: 7px;
+}
+.captain{
+    background-image: url(Captain.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 178px;
+    width: 199px;
+    position: absolute;
+    bottom: 150px;
+    left: 12px;
+}
+.thanos{
+    background-image: url(Thanos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 180px;
+    width: 233px;
+    position: absolute;
+    bottom: 150px;
+    left: 50vw;
+}
+@keyframes captain{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 434px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes thanos{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left:-10vw;
+    }
+}
+
+.animateCaptain{
+    animation: captain 0.8s linear ;
+}
+
+.animateThanos{
+    animation: thanos 5s linear infinite;
+} 
